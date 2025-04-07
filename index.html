@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gender-Automat</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/index.html"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="/images/android-chrome-512x512.png" alt="Logo" class="img-fluid px-2" style="max-width: 50px;">
+            <span class="fs-4">Gender-Automat</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/index.html" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/html/überdiskriminierung.html" class="nav-link">Über Diskriminierung</a></li>
+            <li class="nav-item"><a href="/html/inklusionimjob.html" class="nav-link">Inklusion im Job</a></li>
+            <li class="nav-item"><a href="/html/genderdatagap.html" class="nav-link">Gender Data Gap</a></li>
+            <li class="nav-item"><a href="/html/überuns.html" class="nav-link">Über uns</a></li>
+        </ul>
+    </header>
+
+    <!-- Main content -->
+
+    <div class="container mt-3" dir="auto">
+        <ul class="list-group">
+            <li class="list-group-item"><a href="/html/lokalelinks-sites/lokalerlink1.html">lokaler link 1</a>
+            </li>
+            <li class="list-group-item"><a href="/html//lokalelinks-sites/lokalerlink2.html">lokaler link 2</a>
+            </li>
+            <li class="list-group-item"><a href="/html//lokalelinks-sites/lokalerlink3.html">lokaler link 3</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container mt-3" id="genderText">
+        <h2>Beispiele für nicht gendergerechte Texte</h2>
+        <h3>Anleitung 1</h3>
+        <p>Der Abteilungsleiter stimmt sich mit Dezernenten und Rektoren über das Veranstaltungskonzept eines
+            Hochschultags ab. Professoren, Wissenschaftler und Doktoranden bereiten Vorträge und Poster-Sessions vor.
+            Interessenten, Besucher sowie die Leser der Studentenzeitung werden über Social Media und Flyer eingeladen.
+            Der Herausgeber der Unizeitung veröffentlicht eine Sonderausgabe. Die Trainerin wird das Seminar in
+            englischer Sprache durchführen. Teilnehmer erhalten Informationen von kompetenten Softwareberatern,
+            Spezialisten und Ärzten. Die Mitarbeiterinnen und Mitarbeiter sorgen für einen reibungslosen Ablauf. Die
+            Studentin oder der Student, die oder der ihre oder seine Prüfung ablegt, informiert den Betroffenen, also
+            Studieninteressierte, aus erster Hand. Die Studenten können ihr Zeugnis im Prüfungsamt beantragen.</p>
+        <h3>Anleitung 2</h3>
+        <p>Ein Mitarbeitergespräch dient dazu, Mitarbeitenden Feedback zu geben und ihre Entwicklung zu fördern. Der
+            Abteilungsleiter und die Mitarbeiterinnen und Mitarbeiter legen gemeinsam Ziele fest. Der Einzelne
+            reflektiert seine Aufgaben – man muss nur darauf achten, dass realistische Ziele gesetzt werden. Das
+            Mitarbeitergespräch beginnt offen, denn man hat seine Gefühle nicht immer im Griff. Der Leser sollte sich im
+            Vorfeld über die Gesprächsstruktur informieren. Die Antragsteller müssen das Formular vollständig ausfüllen
+            und fristgerecht einreichen. Die Redakteure der Personalabteilung bereiten die Protokolle auf.</p>
+        <h3>Anleitung 3</h3>
+        <p>Ein wissenschaftliches Buch zu veröffentlichen beginnt oft mit einer persönlichen Geschichte: Der Student,
+            der Probleme mit dem BAföG-Amt hat, schreibt über Studienfinanzierung. Jeder mit einer guten Idee kann Autor
+            oder Promovend werden. Der Verfasser des Buches ist unbekannt – das sollte vermieden werden. Der Lehrer oder
+            die Lehrer geben wertvolles Feedback. Rückmeldungen von die Studenten und der Stimmberechtigte der Redaktion
+            fließen mit ein. Ein Lektor, ein Herausgeber und ein Interpret prüfen das Manuskript. In der Expertenrunde
+            von Professoren, Wissenschaftlern und Spezialisten wird die Relevanz des Werkes diskutiert.</p>
+        <button type="button" class="btn btn-primary btn-lg" onclick="ersetzeGenderSprache()">Gendergerechte Sprache
+            anwenden</button>
+
+    </div>
+    <!-- Footer -->
+    <div class="container">
+        <footer class="py-3 my-3 border-top">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="/html/footer-sites/impressum.html"
+                        class="nav-link px-2 text-body-secondary">Impressum</a></li>
+                <li class="nav-item"><a href="/html/footer-sites/datenschutz.html"
+                        class="nav-link px-2 text-body-secondary">Datenschutz</a></li>
+                <li class="nav-item"><a href="/html/footer-sites/faq.html"
+                        class="nav-link px-2 text-body-secondary">FAQ</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 Gender-Automat</p>
+        </footer>
+    </div>
+
+    <script>
+        const phraseReplacements = {
+            'Die Studentin oder der Student, die oder der ihre oder seine Prüfung ablegt,': 'Die Studierenden, die die Prüfung ablegen,',
+            'Die Antragsteller müssen das Formular vollständig ausfüllen und fristgerecht einreichen.': 'Der Antrag ist vollständig auszufüllen und fristgerecht einzureichen.',
+            'Der Student, der Probleme mit dem BAföG-Amt hat,': 'Wer Probleme mit dem BAföG-Amt hat,',
+            'Die Studenten können ihr Zeugnis im Prüfungsamt beantragen.': 'Das Zeugnis kann im Prüfungsamt beantragt werden.',
+            'Die Trainerin wird das Seminar in englischer Sprache durchführen.': 'Das Seminar wird in englischer Sprache durchgeführt.',
+            'kompetente Softwareberater': 'Personen, die kompetent in der Softwareberatung sind',
+            'Es ist nicht bekannt, wer das Werk verfasst hat': 'Der Verfasser des Buches ist unbekannt',
+            'Man hat seine Gefühle nicht immer im Griff.': 'Wir haben unsere Gefühle nicht immer im Griff.',
+            'Man muss nur darauf achten, dass': 'Es muss darauf geachtet werden, dass'
+        };
+
+        const wordReplacements = [
+            ['\\bDie Mitarbeiterinnen und Mitarbeiter\\b', 'Die Mitarbeitenden'],
+            ['\\bDie Redakteure\\b', 'Die Redaktion'],
+            ['\\bDie Leser\\b', 'Lesende'],
+            ['\\bDie Lehrer\\b', 'Lehrende'],
+            ['\\bDer Leser\\b', 'Lesende'],
+            ['\\bDer Lehrer\\b', 'Lehrende'],
+            ['\\bDer Einzelne\\b', 'Der einzelne Mensch'],
+            ['\\bDer Stimmberechtigte\\b', 'Das stimmberechtigte Mitglied'],
+            ['\\bDie Studenten\\b', 'Studierende'],
+            ['\\bDer Student\\b', 'Studierende'],
+            ['\\bPromovenden\\b', 'Promovierende'],
+            ['\\bPromovend\\b', 'Promovierende'],
+            ['\\bInteressenten\\b', 'Interessierte'],
+            ['\\bRektoren\\b', 'Rektor*innen'],
+            ['\\bDezernenten\\b', 'Dezernent*innen'],
+            ['\\bProfessoren\\b', 'Professor*innen'],
+            ['\\bStudenten\\b', 'Student*innen'],
+            ['\\bTeilnehmer(?!\\*in)\\b', 'Teilnehmer*in'],
+            ['\\bSpezialisten(?!\\*in)\\b', 'Spezialist*innen'],
+            ['\\bWissenschaftler(?!\\*in)\\b', 'Wissenschaftler*in'],
+            ['\\bÄrzte(?!\\*in)\\b', 'Ärzt*innen'],
+            ['\\bBesucher(?!\\*in)\\b', 'Besucher*in'],
+            ['\\bMitarbeiter(?!\\*in)\\b', 'Mitarbeiter*in'],
+            ['\\bAutor(?!\\*in)\\b', 'Autor*in'],
+            ['\\bDezernent(?!\\*in)\\b', 'Dezernent*in'],
+            ['\\bAbteilungsleiter(?!\\*in)\\b', 'Abteilungsleiter*in'],
+            ['\\bHerausgeber(?!\\*in)\\b', 'Herausgeber*in'],
+            ['\\bLektor(?!\\*in)\\b', 'Lektor*in'],
+            ['\\bInterpret(?!\\*in)\\b', 'Interpret*in'],
+            ['\\bStudentenzeitung\\b', 'Student*innenzeitung'],
+            ['\\bMitarbeitergespräch\\b', 'Mitarbeitendengespräch'],
+            ['\\bExpertenrunde\\b', 'Fachrunde']
+        ].map(([pattern, replacement]) => ({
+            regex: new RegExp(pattern, 'g'),
+            value: replacement
+        }));
+
+        // This function replaces non-gender-neutral terms and phrases in the text content
+        // of elements within the #genderText container with gender-neutral alternatives.
+        function ersetzeGenderSprache() {
+            const genderTextElements = document.querySelectorAll('#genderText p');
+            genderTextElements.forEach(element => {
+                let content = element.innerText;
+                // Escape HTML if needed (optional depending on use)
+                content = content.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+                // Phrasen ersetzen (exakte Strings)
+                Object.entries(phraseReplacements).forEach(([key, value]) => {
+                    content = content.replace(new RegExp(key, 'g'), value);
+                });
+
+                // Einzelbegriffe per Regex ersetzen
+                wordReplacements.forEach(({ regex, value }) => {
+                    content = content.replace(regex, value);
+                });
+
+                element.innerText = content;
+            });
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
