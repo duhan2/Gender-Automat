@@ -146,9 +146,8 @@
         function ersetzeGenderSprache() {
             const genderTextElements = document.querySelectorAll('#genderText p');
             genderTextElements.forEach(element => {
+                // Get the current text content of the element
                 let content = element.innerText;
-                // Escape HTML if needed (optional depending on use)
-                content = content.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
                 // Phrasen ersetzen (exakte Strings)
                 Object.entries(phraseReplacements).forEach(([key, value]) => {
